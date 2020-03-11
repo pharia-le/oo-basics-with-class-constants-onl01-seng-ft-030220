@@ -16,7 +16,7 @@ class Shoe
   
   def brand=(brand)
     @brand = brand
-    BRANDS << brand
+    BRANDS << brand if BRANDS.none?(brand)
   end
   
 end
